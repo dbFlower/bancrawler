@@ -56,7 +56,7 @@ class entrypipeline:
             f.write('\n最受欢迎的禁言时长有:\n'.encode('utf-8'))
             for i in bandurationlist:
                 f.write('{}, 被使用{}次\n'.format(*i).encode('utf-8'))
-            f.write('\n本次统计采取2015/05/09至2017/05/30墓园数据. 识别并不是很完美, 也其实并不认识多少被驱逐的人. 如有补充请补充咯\n'.encode('utf-8'))
+            f.write('\n本次统计采取2015/05/09至2017/05/27墓园数据. 识别并不是很完美, 也其实并不认识多少被驱逐的人. 如有补充请补充咯\n'.encode('utf-8'))
             f.write('源码: https://github.com/mumingpo/bancrawler'.encode('utf-8'))
         with open('banned.json', 'w') as f:
             json.dump(bannedlist, f)
